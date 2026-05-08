@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marble Maze — CMPM 120 D3</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0a0816;
+      color: #e0d8ff;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      overflow: hidden;
+      height: 100%;
+    }
+    #game {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    canvas {
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
+      box-shadow: 0 0 40px rgba(140, 80, 220, 0.4);
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+
+  <script src="lib/phaser.js"></script>
+  <script src="src/MazeGen.js"></script>
+  <script src="src/scenes/BootScene.js"></script>
+  <script src="src/scenes/MenuScene.js"></script>
+  <script src="src/scenes/GameScene.js"></script>
+  <script src="src/scenes/SummaryScene.js"></script>
+  <script src="src/scenes/EndScene.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
